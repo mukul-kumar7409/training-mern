@@ -1,0 +1,52 @@
+@font-face {
+    font-family: jatin;
+    src: url('./Magnetik-Light.otf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: jatin;
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    
+}
+.box{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(165, 223, 223);
+    font-size: 10px;
+    
+}
+.box>div{
+    width: 100%;
+    height: 20px;
+    background-color: rgb(33, 135, 135);
+   border: 1px solid black;
+}
+.box1{
+    width: 20rem;
+    height: 30rem;
+    background-color: rgb(62, 170, 87);
+}
+
+.box1:hover{
+    width: 20rem;
+    height: 20rem;
+    transition:all 1.9s ease;
+}
+h1~p{
+    font-size : 20px;
+    color: brown;
+}
+li:nth-child(even){
+    color:rgb(122, 29, 136);
+}
+
+.eg1:has(h1){
+    color:rgb(34, 246, 87);
+    
+}

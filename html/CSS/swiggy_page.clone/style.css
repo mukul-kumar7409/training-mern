@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #282c3f;
+}
+
+/* Navbar */
+header {
+    background-color: white;
+    box-shadow: 0px 2px 8px #ddd;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.logo {
+    color: #fc8019;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #282c3f;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #fc8019;
+}
+
+.signin {
+    background-color: #fc8019;
+    color: white !important;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+/* Hero section */
+.hero {
+    background-color: #fc8019;
+    text-align: center;
+    padding: 45px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 38px;
+    line-height: 1.4;
+}
+
+.hero p {
+    margin-top: 12px;
+    font-size: 17px;
+}
+
+.search-box {
+    margin: 25px auto;
+}
+
+.search-box input {
+    width: 280px;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    margin: 5px;
+    outline: none;
+}
+
+.hero img {
+    width: 350px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Services */
+.services, .food-section, .grocery {
+    padding: 45px 8%;
+}
+
+h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+.service-container {
+    display: flex;
+    gap: 20px;
+}
+
+.service-card {
+    width: 33.33%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff7f0;
+    box-shadow: 0px 2px 8px #ddd;
+}
+
+.service-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.service-card h3 {
+    margin-top: 12px;
+}
+
+.service-card p {
+    margin-top: 7px;
+    color: #686b78;
+}
+
+/* Food section */
+.food-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.food-card {
+    width: 15%;
+    text-align: center;
+}
+
+.food-card img {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.food-card h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Grocery section */
+.grocery {
+    background-color: #fff8f1;
+}
+
+.grocery-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.grocery-card {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    width: 17%;
+    border-radius: 8px;
+}
+
+.grocery-icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+/* App section */
+.app-section {
+    margin: 40px 8%;
+    padding: 35px;
+    background-color: #fff0e3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.app-section p {
+    margin-top: 10px;
+}
+
+.app-section h1 {
+    color: #fc8019;
+}
+
+/* Footer */
+footer {
+    background-color: #171a29;
+    color: white;
+    padding: 40px 8%;
+}
+
+footer h2 {
+    color: #fc8019;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-links h3 {
+    margin-bottom: 15px;
+}
+
+.footer-links p {
+    color: #c5c5c5;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 35px;
+    color: #aaa;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        margin: 7px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .search-box input {
+        width: 90%;
+    }
+
+    .hero img {
+        width: 90%;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+
+    .food-card {
+        width: 28%;
+    }
+
+    .grocery-card {
+        width: 45%;
+    }
+
+    .app-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footer-links {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .food-card {
+        width: 45%;
+    }
+
+    .hero h1 {
+        font-size: 23px;
+    }
+
+    .services, .food-section, .grocery {
+        padding: 30px 5%;
+    }
+}
